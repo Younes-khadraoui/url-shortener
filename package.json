@@ -1,0 +1,10 @@
+{
+  "name": "url-shortener-root",
+  "private": true,
+  "scripts": {
+    "client": "bun --cwd src/client start",
+    "client:build": "bun --cwd src/client run build",
+    "api": "dotnet watch --project src/api",
+    "dev": "concurrently \"bun run client\" \"bun run server\""
+  }
+}
